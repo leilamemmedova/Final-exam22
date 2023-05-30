@@ -1,0 +1,46 @@
+{
+  "fashions": [
+    {
+      "id": 1,
+      "image": "f1.jpg",
+      "name": "Leyla When Gambling Becomes A Problem",
+      "price": "150"
+    },
+    {
+      "id": 2,
+      "image": "f4.jpg",
+      "name": "mahammad",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "image": "f3.jpg",
+      "name": "Ulfat When Gambling Becomes A Problem",
+      "price": "100"
+    },
+    {
+      "id": 4,
+      "image": "f4.jpg",
+      "name": "Kanan When Gambling Becomes A Problem",
+      "price": "200"
+    },
+    {
+      "id": 5,
+      "image": "f1.jpg",
+      "name": "Raya When Gambling Becomes A Problem",
+      "price": "600"
+    },
+    {
+      "id": 6,
+      "image": "f2.jpg",
+      "name": "Addiction When Gambling Becomes A Problem",
+      "price": "350"
+    },
+    {
+      "id": 7,
+      "image": "f3.jpg",
+      "name": "Addiction When Gambling Becomes A Problem",
+      "price": "50"
+    }
+  ]
+}

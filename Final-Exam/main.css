@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.burger-menu {
+  display: none;
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+}
+.burger-menu #modal-remove {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: 30px;
+  margin: 30px;
+  color: white;
+}
+.burger-menu .burger-nav ul {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.burger-menu .burger-nav ul li {
+  list-style: none;
+  margin: 12px;
+}
+.burger-menu .burger-nav ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+header .header {
+  margin: 15px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header nav .pages {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header nav .pages li {
+  list-style: none;
+  margin: 0 15px;
+}
+header .header nav .pages li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+header .header .menuBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  header .container .header nav {
+    display: none;
+  }
+  header .container .header .menuBtn {
+    font-size: 24px;
+    display: block;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+}
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  margin-top: 8vh;
+  background-color: rgba(32, 32, 32, 0.8);
+  background-image: url("/assets/images/header-bg (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+#hero-section .hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+#hero-section .hero-section h1 {
+  width: 70%;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+}
+#hero-section .hero-section .hero-bottom {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+#hero-section .hero-section .hero-bottom p {
+  color: white;
+}
+#hero-section .hero-section .hero-bottom .icons {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero-section .hero-section .hero-bottom .icons .likes {
+  display: flex;
+  align-items: center;
+}
+#hero-section .hero-section .hero-bottom .icons .likes p {
+  padding-left: 8px;
+  margin: 0;
+}
+#hero-section .hero-section .hero-bottom .icons .comments {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+#hero-section .hero-section .hero-bottom .icons .comments p {
+  padding-left: 8px;
+  margin: 0;
+}
+#hero-section .hero-section .hero-bottom .hero-right {
+  display: flex;
+  align-items: center;
+}
+#hero-section .hero-section .hero-bottom .hero-right p {
+  margin: 0;
+}
+
+#categories-section {
+  width: 100%;
+}
+#categories-section .categories-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#categories-section .categories-section .category-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+#categories-section .categories-section .category-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#categories-section .categories-section .category-title p {
+  margin: 12px 0;
+  width: 60%;
+}
+#categories-section .categories {
+  margin: 10px 0;
+}
+#categories-section .categories .category {
+  padding: 12px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#categories-section .categories .category img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+#categories-section .categories .category .category-text {
+  margin: 10px 0;
+}
+#categories-section .categories .category .category-text p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 16px;
+  background-color: black;
+  color: rgb(187, 187, 187);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 16px;
+  background-color: black;
+  color: rgb(187, 187, 187);
+}
+#categories-section .categories .category .category-text h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#travel-section {
+  width: 100%;
+}
+#travel-section .travel-section {
+  margin: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#travel-section .travel-section .travel-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+#travel-section .travel-section .travel-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+#travel-section .travel-section .travel-title p {
+  color: gray;
+  margin: 8px 0;
+  width: 60%;
+}
+#travel-section .travel-section .travels .travel {
+  min-width: 500px;
+  display: flex;
+}
+#travel-section .travel-section .travels .travel .travel-img {
+  position: relative;
+}
+#travel-section .travel-section .travels .travel .travel-img img {
+  width: 200px;
+  height: 190px;
+}
+#travel-section .travel-section .travels .travel .travel-img img:hover {
+  transform: scale(1.1);
+}
+#travel-section .travel-section .travels .travel .travel-img .december {
+  position: absolute;
+  padding: 8px 24px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  top: 15px;
+}
+#travel-section .travel-section .travels .travel .travel-img .december h3 {
+  font-size: 24px;
+}
+#travel-section .travel-section .travels .travel .travel-img .december p {
+  margin-bottom: 3px;
+}
+#travel-section .travel-section .travels .travel .travel-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#travel-section .travel-section .travels .travel .travel-text p {
+  color: gray;
+}
+#travel-section .travel-section .travels .travel .travel-text .icons {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#travel-section .travel-section .travels .travel .travel-text .icons .likes {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+#travel-section .travel-section .travels .travel .travel-text .icons .likes p {
+  padding-left: 8px;
+  margin: 0;
+}
+#travel-section .travel-section .travels .travel .travel-text .icons .comments {
+  display: flex;
+  align-items: center;
+}
+#travel-section .travel-section .travels .travel .travel-text .icons .comments p {
+  padding-left: 8px;
+  margin: 0;
+}
+#travel-section .travel-section .loadMore {
+  padding: 12px 30px;
+  background-color: rgb(0, 195, 255);
+  border: 1px solid rgb(0, 195, 255);
+  border-radius: 30px;
+  border: none;
+}
+#travel-section .travel-section .loadMore:hover {
+  background-color: white;
+  border: 1px solid rgb(0, 195, 255);
+  color: rgb(0, 195, 255);
+}
+
+.search-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 20px;
+}
+.search-sort input {
+  padding: 8px 50px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  color: blue;
+  font-size: 18px;
+  outline: none;
+}
+.search-sort a {
+  text-decoration: none;
+  padding: 9px 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#fashion-section {
+  width: 100%;
+}
+#fashion-section .fashion-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#fashion-section .fashion-section .fashion-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+#fashion-section .fashion-section .fashion-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+#fashion-section .fashion-section .fashion-title p {
+  color: gray;
+  margin: 8px 0;
+  width: 60%;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-img img {
+  width: 100%;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-img img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .date {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 16px;
+  background-color: black;
+  color: rgb(187, 187, 187);
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .icons {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .icons .likes {
+  display: flex;
+  align-items: center;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .icons .likes p {
+  padding-left: 8px;
+  margin: 0;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .icons .comments {
+  display: flex;
+  align-items: center;
+}
+#fashion-section .fashion-section .fashions .fashion .fashion-text .icons .comments p {
+  padding-left: 8px;
+  margin: 0;
+}
+#fashion-section .fashion-section .buttons {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#fashion-section .fashion-section .buttons div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#fashion-section .fashion-section .buttons a {
+  margin: 4px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(39, 39, 74);
+}
+footer .footer {
+  height: 20vh;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer p {
+  margin: 0;
+  color: white;
+}
+footer .footer p span {
+  color: white;
+}
+footer .footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+footer .footer .icons i {
+  font-size: 16px;
+  padding: 15px;
+  background-color: rgb(193, 193, 193);
+  margin: 0 4px;
+  color: white;
+}
+footer .footer .icons i:hover {
+  background-color: rgb(36, 28, 85);
+  color: white;
+}
+@media only screen and (max-width: 778px) {
+  footer .icons {
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}/*# sourceMappingURL=main.css.map */

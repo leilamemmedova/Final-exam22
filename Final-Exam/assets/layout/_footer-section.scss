@@ -1,0 +1,43 @@
+footer {
+  width: 100%;
+ background-color: rgb(39, 39, 74);
+  .footer {
+    height: 20vh;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      color: white;
+      span {
+        color:white ;
+      }
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      i {
+        font-size: 16px;
+        padding: 15px;
+        background-color: rgb(193, 193, 193);
+        margin: 0 4px;
+        color: white;
+        &:hover {
+          background-color:rgb(36, 28, 85);
+          color:white ;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 778px) {
+    .icons {
+      margin-left: 0;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+}

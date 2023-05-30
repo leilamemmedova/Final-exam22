@@ -1,0 +1,101 @@
+#travel-section {
+  width: 100%;
+  .travel-section {
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .travel-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px 0;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      p {
+        color: gray;
+        margin: 8px 0;
+        width: 60%;
+      }
+    }
+    .travels {
+      .travel {
+        min-width: 500px;
+        display: flex;
+        // margin: 0 20px;
+        .travel-img {
+          position: relative;
+          img {
+            width: 200px;
+            height: 190px;
+            &:hover{
+                transform: scale(1.1);
+            }
+          }
+          .december {
+            position: absolute;
+            padding: 8px 24px;
+
+            background-color: rgb(42, 42, 42);
+            color: white;
+            top: 15px;
+            h3 {
+              font-size: 24px;
+            }
+            p {
+              margin-bottom: 3px;
+            }
+          }
+        }
+        .travel-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          p {
+            color: gray;
+          }
+          .icons {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .likes {
+              margin: 20px;
+              display: flex;
+              align-items: center;
+              p {
+                padding-left: 8px;
+                margin: 0;
+              }
+            }
+            .comments {
+              display: flex;
+              align-items: center;
+              p {
+                padding-left: 8px;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .loadMore {
+      padding: 12px 30px;
+      background-color: rgb(0, 195, 255);
+      border: 1px solid rgb(0, 195, 255);
+      border-radius: 30px;
+      border: none;
+      &:hover {
+        background-color: white;
+        border: 1px solid rgb(0, 195, 255);
+        color:rgb(0, 195, 255) ;
+      }
+    }
+  }
+}

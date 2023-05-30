@@ -1,0 +1,112 @@
+.search-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 20px;
+  input {
+    padding: 8px 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: blue;
+    font-size: 18px;
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+    padding: 9px 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+}
+
+#fashion-section {
+  width: 100%;
+  .fashion-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .fashion-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px 0;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      p {
+        color: gray;
+        margin: 8px 0;
+        width: 60%;
+      }
+    }
+    .fashions {
+      .fashion {
+        .fashion-img {
+          img {
+            width: 100%;
+            &:hover{
+                transform: scale(1.1);
+                transition: all 1s;
+            }
+          }
+        }
+        .fashion-text {
+          .date {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            font-size: 14px;
+            padding: 5px 16px;
+            background-color: black;
+            color: rgb(187, 187, 187);
+          }
+          .icons {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .likes {
+              display: flex;
+              align-items: center;
+              p {
+                padding-left: 8px;
+                margin: 0;
+              }
+            }
+            .comments {
+              display: flex;
+              align-items: center;
+              p {
+                padding-left: 8px;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .buttons{
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      a{
+        margin: 4px;
+        color: white;
+      }
+    }
+  }
+}
